@@ -24,6 +24,7 @@ public class RequestParamServlet extends HttpServlet {
         System.out.println();
 
         System.out.println("[단일 파라미터 조회]");
+        // request.getParameter()는 GET URL 쿼리 파라미터 형식도 지원하고 POST HTML Form 형식도 둘 다 지원한다.
         String username = request.getParameter("username");
         String age = request.getParameter("age");
 
